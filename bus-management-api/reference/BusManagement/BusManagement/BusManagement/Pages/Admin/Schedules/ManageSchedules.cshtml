@@ -1,0 +1,63 @@
+﻿@page
+@{
+    Layout = null;  // Use the default layout for the page
+}
+@model BusManagement.Pages.Admin.Schedules.ManageSchedulesModel
+
+@{
+    ViewData["Title"] = "Manage Schedules";
+}
+
+<!-- Add Bootstrap Icons link -->
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<!-- Render the Admin Navigation Bar -->
+@await Html.PartialAsync("AdminNavigation")
+
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Manage Schedules</h2>
+        <a href="/Admin/Schedules/AddSchedule" class="btn btn-success">
+            <i class="bi bi-plus-circle me-1"></i> Add New Schedule
+        </a>
+    </div>
+
+    <div class="table-responsive shadow-sm rounded-3">
+        <table class="table table-hover align-middle bg-white">
+            <thead class="table-dark">
+                <tr>
+                    <th>Schedule ID</th>
+                    <th>Bus Plate</th>
+                    <th>Route</th>
+                    <th>Departure Time</th>
+                    <th>Arrival Time</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var schedule in Model.Schedules)
+                {
+                        <tr>
+                            <td>@schedule.ScheduleId</td>
+                                <td>@schedule.BusNumber</td>
+                                        <td>@schedule.Origin - @schedule.Destination</td>
+                            <td>@schedule.DepartureTime.ToString("yyyy-MM-dd HH:mm")</td>
+                            <td>@schedule.ArrivalTime.ToString("yyyy-MM-dd HH:mm")</td>
+                            <td class="text-center">
+                                <a href="/Admin/Schedules/EditSchedule?ScheduleId=@schedule.ScheduleId" class="btn btn-outline-warning btn-sm me-1">
+                                    <i class="bi bi-pencil-square"></i> Edit
+                                </a>
+                                <form method="post" asp-page-handler="Delete" asp-route-scheduleId="@schedule.ScheduleId" style="display:inline;">
+                                    <button type="submit" class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

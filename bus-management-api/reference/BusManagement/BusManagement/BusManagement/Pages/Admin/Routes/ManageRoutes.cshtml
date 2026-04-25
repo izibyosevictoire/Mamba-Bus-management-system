@@ -1,0 +1,60 @@
+﻿@page
+@{
+    Layout = null;  // Use the default layout for the page
+}
+@model BusManagement.Pages.Admin.Routes.ManageRoutesModel
+
+@{
+    ViewData["Title"] = "Manage Routes";
+}
+
+<!-- Add Bootstrap Icons link -->
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+@await Html.PartialAsync("AdminNavigation")
+
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Manage Routes</h2>
+        <a href="/Admin/Routes/AddRoute" class="btn btn-success">
+            <i class="bi bi-plus-circle me-1"></i> Add New Route
+        </a>
+    </div>
+
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Distance (km)</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var route in Model.Routes)
+            {
+                    <tr>
+                        <td>@route.Origin</td>
+                        <td>@route.Destination</td>
+                        <td>@route.Distance</td>
+                        <td>@route.Price</td>
+                        <td>
+                            <a href="/Admin/Routes/EditRoute?RouteId=@route.RouteId" class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil-square me-1"></i> Edit
+                            </a>
+
+                            <!-- Delete form -->
+                            <form method="post" asp-page-handler="Delete" asp-route-routeId="@route.RouteId" style="display:inline;">
+                                <button type="submit" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash me-1"></i> Delete
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>

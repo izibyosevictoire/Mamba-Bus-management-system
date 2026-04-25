@@ -1,0 +1,64 @@
+﻿@page
+@model BusManagement.Pages.Drivers.ScheduleModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Schedule";
+}
+@await Html.PartialAsync("DriverNavigation")
+
+<div class="container my-5">
+    <!-- Back Button -->
+    <div class="mb-4">
+        <a href="/Drivers/Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left-circle me-1"></i> Back to Dashboard
+        </a>
+    </div>
+
+    <h2 class="fw-bold text-center mb-4">Your Schedule</h2>
+
+    @if (Model.DriverAssignments.Count == 0)
+    {
+            <div class="alert alert-info text-center">
+                No assignments found.
+            </div>
+    }
+    else
+    {
+            <div class="table-responsive shadow-sm rounded-3">
+                <table class="table table-hover align-middle bg-white">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Assignment ID</th>
+                            <th>Bus Name</th>
+                            <th>Driver Name</th>
+                            <th>Assignment Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var assignment in Model.DriverAssignments)
+                    {
+                                <tr>
+                                    <td>@assignment.AssignmentId</td>
+                                    <td>@assignment.BusName</td>
+                                    <td>@assignment.DriverName</td>
+                                    <td>@assignment.AssignmentDate.ToString("yyyy-MM-dd HH:mm")</td>
+                                    <td>
+                                @{
+                                    // Determine the badge color based on the status
+                                    var statusClass = assignment.Status.ToLower() switch
+                                    {
+                                        "active" => "bg-success",
+                                        "pending" => "bg-warning",
+                                        _ => "bg-secondary"
+                                    };
+                                }
+                                        <span class="badge @statusClass">@assignment.Status</span>
+                                    </td>
+                                </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+    }
+</div>

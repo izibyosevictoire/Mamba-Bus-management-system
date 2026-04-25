@@ -1,0 +1,59 @@
+﻿@page
+@model BusManagement.Pages.Clients.TicketsModel
+@{
+    Layout = null;
+    ViewData["Title"] = "My Tickets";    
+}
+
+
+<!-- Render the Client Navigation Bar -->
+@await Html.PartialAsync("ClientNavigation")
+
+<!-- Optional: Add Bootstrap Icons Link if not added globally -->
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<div class="container my-5">
+    <h2 class="fw-bold text-center mb-4">My Tickets</h2>
+
+    <div class="table-responsive shadow-sm rounded-3">
+        <table class="table table-hover align-middle bg-white">
+            <thead class="table-dark">
+                <tr>
+                    <th>Ticket ID</th>
+                    <th>Bus</th>
+                    <th>Destination</th>
+                    <th>Price</th>
+                    <th>Duration</th>
+                    <th>Date Issued</th>
+                    <th>Export</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ticket in Model.Tickets)
+                {
+                        <tr>
+                            <td>@ticket.TicketId</td>
+                            <td>@ticket.BusName</td>
+                            <td>@ticket.RouteName - @ticket.RouteDestination</td>
+                            <td>@ticket.Price</td>
+                                    <td>@ticket.DepartureTime.ToString("HH:mm:ss") - @ticket.ArrivalTime.ToString("HH:mm:ss")</td>
+                                <td>@ticket.DateIssued.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                            <td>
+                                <a href="/Clients/ExportToPdf?ticketId=@ticket.TicketId" class="btn btn-sm btn-success">
+                                    <i class="bi bi-file-earmark-pdf me-1"></i>Export PDF
+                                </a>
+                            </td>
+                        </tr>
+                }
+                
+                <a href="/Clients/Index" class="btn btn-secondary">
+                    <i class="bi bi-house-door me-1"></i> Home
+                </a>
+                <br />
+                <br />
+            </tbody>
+        </table>
+    </div>
+</div>

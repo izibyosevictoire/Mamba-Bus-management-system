@@ -1,0 +1,191 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Hero Section -->
+<div class="hero-section py-5 fade-in">
+    <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <h1 class="display-3 fw-bold mb-4">
+                Welcome to <span style="color: var(--primary-color);">Bus Management System</span>
+            </h1>
+            <p class="lead text-muted mb-4">
+                Efficient solution for seamless bus management. Book tickets, manage schedules, and track routes all in one place.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+                <a href="/Signup" class="btn btn-primary btn-lg">
+                    <i class="fas fa-rocket me-2"></i> Get Started
+                </a>
+                <a href="#features" class="btn btn-outline-primary btn-lg">
+                    <i class="fas fa-info-circle me-2"></i> Learn More
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="position-relative">
+                <div class="hero-illustration">
+                    <i class="fas fa-bus" style="font-size: 20rem; color: var(--primary-light); opacity: 0.1;"></i>
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-bus" style="font-size: 15rem; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<section id="features" class="py-5 mt-5">
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Why Choose Us?</h2>
+        <p class="lead text-muted">Everything you need for efficient bus management</p>
+    </div>
+    
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card dashboard-card h-100 text-center p-4 slide-in-left">
+                <div class="mb-3">
+                    <div class="icon-wrapper mx-auto" style="width: 80px; height: 80px; background: rgba(99, 102, 241, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-ticket-alt fa-2x text-primary"></i>
+                    </div>
+                </div>
+                <h4 class="card-title">Easy Booking</h4>
+                <p class="card-text text-muted">Book your bus tickets in seconds with our intuitive interface</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card dashboard-card h-100 text-center p-4 fade-in" style="animation-delay: 0.2s;">
+                <div class="mb-3">
+                    <div class="icon-wrapper mx-auto" style="width: 80px; height: 80px; background: rgba(16, 185, 129, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-route fa-2x text-success"></i>
+                    </div>
+                </div>
+                <h4 class="card-title">Route Management</h4>
+                <p class="card-text text-muted">Manage bus routes and schedules efficiently</p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card dashboard-card h-100 text-center p-4 slide-in-right">
+                <div class="mb-3">
+                    <div class="icon-wrapper mx-auto" style="width: 80px; height: 80px; background: rgba(239, 68, 68, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-shield-alt fa-2x text-danger"></i>
+                    </div>
+                </div>
+                <h4 class="card-title">Secure System</h4>
+                <p class="card-text text-muted">Your data is safe with our secure system</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- User Types Section -->
+<section class="py-5 mt-5">
+    <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">For Everyone</h2>
+        <p class="lead text-muted">Tailored experiences for all user types</p>
+    </div>
+    
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card dashboard-card h-100 border-0">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-wrapper me-3" style="width: 60px; height: 60px; background: rgba(99, 102, 241, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-users fa-lg text-primary"></i>
+                        </div>
+                        <h4 class="mb-0">Passengers</h4>
+                    </div>
+                    <p class="text-muted mb-3">Search routes, book tickets, and manage your bookings effortlessly</p>
+                    <a href="/Clients/Index" class="btn btn-outline-primary">
+                        <i class="fas fa-arrow-right me-2"></i> Explore
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card dashboard-card h-100 border-0">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-wrapper me-3" style="width: 60px; height: 60px; background: rgba(16, 185, 129, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-id-card fa-lg text-success"></i>
+                        </div>
+                        <h4 class="mb-0">Drivers</h4>
+                    </div>
+                    <p class="text-muted mb-3">Access your schedules, routes, and manage your daily tasks</p>
+                    <a href="/Drivers/Index" class="btn btn-outline-success">
+                        <i class="fas fa-arrow-right me-2"></i> Dashboard
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="card dashboard-card h-100 border-0">
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-wrapper me-3" style="width: 60px; height: 60px; background: rgba(236, 72, 153, 0.1); border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-user-shield fa-lg text-danger"></i>
+                        </div>
+                        <h4 class="mb-0">Administrators</h4>
+                    </div>
+                    <p class="text-muted mb-3">Full control over buses, routes, schedules, and system management</p>
+                    <a href="/Admin/Index" class="btn btn-outline-danger">
+                        <i class="fas fa-arrow-right me-2"></i> Admin Panel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 mt-5 mb-5">
+    <div class="card" style="background: var(--primary-color); border: none; border-radius: var(--radius-xl);">
+        <div class="card-body text-center py-5 px-4">
+            <h2 class="display-5 fw-bold text-white mb-3">Ready to Get Started?</h2>
+            <p class="lead text-white mb-4">Join our bus management system today</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="/Signup" class="btn btn-light btn-lg">
+                    <i class="fas fa-user-plus me-2"></i> Create Account
+                </a>
+                <a href="/Login" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-sign-in-alt me-2"></i> Sign In
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero-section {
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    .hero-illustration {
+        position: relative;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @@keyframes float {
+        0%, 100% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+    
+    .hero-illustration i {
+        animation: float 3s ease-in-out infinite;
+    }
+</style>
