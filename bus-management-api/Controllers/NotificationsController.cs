@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusManagementApi.Controllers;
+//notifications
 
 [ApiController]
 [Route("api/[controller]")]
