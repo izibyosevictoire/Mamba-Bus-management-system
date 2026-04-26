@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: '/api', // Proxy will handle this in development
+    baseURL: "https://mamba-bus-management-system.onrender.com",
     headers: {
         'Content-Type': 'application/json',
     },
