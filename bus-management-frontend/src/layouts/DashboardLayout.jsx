@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
-
+// React Router for navigation and route handling
 // Importing icons from lucide-react for UI
 import {
     Bus, Map, Calendar, Users, Ticket, LogOut, Menu, X,
