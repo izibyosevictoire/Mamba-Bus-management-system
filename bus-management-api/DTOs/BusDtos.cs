@@ -12,7 +12,7 @@ public class BusDto
     public int? AgencyId { get; set; }
     public string? AgencyName { get; set; }
 }
-
+// DTO for creating/updating bus
 public class CreateBusDto
 {
     [Required]
