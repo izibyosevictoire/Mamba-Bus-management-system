@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace BusManagementApi.DTOs;
-
+// DTO for driver assignment
 public class DriverAssignmentDto
 {
     public int AssignmentId { get; set; }
