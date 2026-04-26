@@ -11,19 +11,22 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ===================== DATABASE =====================
+#region DATABASE
 builder.Services.AddDbContext<BusManagementDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+#endregion
 
-// ===================== SERVICES =====================
+#region SERVICES
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddSingleton<IEmailService, EmailService>();
+#endregion
 
-// ===================== PBAC AUTH =====================
+#region AUTHORIZATION (PBAC)
 builder.Services.AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>();
 builder.Services.AddScoped<IAuthorizationHandler, PermissionHandler>();
+#endregion
 
-// ===================== JWT =====================
+#region JWT AUTH
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -41,17 +44,19 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddAuthorization();
+#endregion
 
+#region CONTROLLERS + JSON
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
-        options.JsonSerializerOptions.PropertyNamingPolicy =
-            System.Text.Json.JsonNamingPolicy.CamelCase;
+        options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
     });
 
 builder.Services.AddSignalR();
+#endregion
 
-// ===================== SWAGGER =====================
+#region SWAGGER
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -86,36 +91,47 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+#endregion
 
-// ===================== CORS =====================
+#region CORS
 builder.Services.AddCors(options =>
     options.AddPolicy("AllowAll", policy =>
         policy.AllowAnyOrigin()
               .AllowAnyMethod()
               .AllowAnyHeader()));
+#endregion
 
 var app = builder.Build();
 
-// ===================== DATABASE INIT (IMPORTANT FIX) =====================
+#region DATABASE INIT (FIXED + SAFE)
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<BusManagementDbContext>();
 
     try
     {
-        // 1. Create/update DB schema on Render PostgreSQL
-        context.Database.Migrate();
+        Console.WriteLine(" Running database migration...");
 
-        // 2. Seed default admin + permissions
+        await context.Database.MigrateAsync();
+
+        Console.WriteLine(" Migration completed");
+
+        Console.WriteLine(" Seeding database...");
+
         await DbInitializer.InitializeAsync(context);
+
+        Console.WriteLine("Database seeding completed");
     }
     catch (Exception ex)
     {
-        Console.WriteLine("DB Initialization error: " + ex.Message);
+        Console.WriteLine("❌ Database initialization failed:");
+        Console.WriteLine(ex.Message);
+        Console.WriteLine(ex.InnerException?.Message);
     }
 }
+#endregion
 
-// ===================== MIDDLEWARE =====================
+#region MIDDLEWARE
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -131,7 +147,9 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.MapHub<NotificationHub>("/hubs/notifications");
+#endregion
 
-// ===================== RENDER PORT CONFIG =====================
+#region RENDER PORT CONFIG
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
 app.Run($"http://0.0.0.0:{port}");
+#endregion
