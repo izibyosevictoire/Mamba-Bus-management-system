@@ -1,5 +1,5 @@
 namespace BusManagementApi.Entities;
-
+//bus entity
 public class Bus
 {
     public int BusId { get; set; }
