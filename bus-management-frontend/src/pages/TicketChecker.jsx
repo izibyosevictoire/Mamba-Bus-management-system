@@ -7,7 +7,7 @@ import { format } from 'date-fns';
 import toast from 'react-hot-toast';
 import { ticketService } from '../api/services';
 import api from '../api/client';
-
+//ticketschcker
 // ─── How It Works Banner ──────────────────────────────────────────────────────
 const HowItWorks = () => (
     <div className="glass-card rounded-2xl p-5 border border-slate-200">
