@@ -1,5 +1,5 @@
 namespace BusManagementApi.Entities;
-
+//route entity
 public class Route
 {
     public int RouteId { get; set; }
