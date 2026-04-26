@@ -14,7 +14,7 @@ import Modal from '../components/Modal';
 import { useAuth } from '../context/AuthContext';
 import { generateTicketPDF } from '../lib/ticketPDF';
 import { parseLocalDate } from '../lib/utils';
-
+//tickets
 // ─── Seat Map Component ───────────────────────────────────────────────────────
 const SeatMap = ({ totalSeats = 40, bookedSeats = [], selectedSeats = [], onToggle }) => {
     const rows = Math.ceil(totalSeats / 4);
