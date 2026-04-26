@@ -1,0 +1,53 @@
+﻿@page
+@{
+    Layout = null;  // Use the default layout for the page
+}
+@model BusManagement.Pages.Admin.Routes.AddRouteModel
+
+@{
+    ViewData["Title"] = "Add Route";
+}
+
+<!-- Add Bootstrap Icons link -->
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<!-- Render the Admin Navigation Bar -->
+@await Html.PartialAsync("AdminNavigation")
+
+<div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Add Route</h2>
+        <!-- Back to Routes Management Button -->
+        <a href="/Admin/Routes/ManageRoutes" class="btn btn-secondary">
+            <i class="bi bi-arrow-left-circle me-1"></i> Back to Routes
+        </a>
+    </div>
+
+    <form method="post">
+        <div class="form-group mb-3">
+            <label for="Origin" class="form-label">Origin</label>
+            <input type="text" class="form-control" id="Origin" name="Origin" asp-for="Origin" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Destination" class="form-label">Destination</label>
+            <input type="text" class="form-control" id="Destination" name="Destination" asp-for="Destination" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Distance" class="form-label">Distance (km)</label>
+            <input type="number" class="form-control" id="Distance" name="Distance" asp-for="Distance" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="Price" name="Price" asp-for="Price" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            <i class="bi bi-save me-1"></i> Add Route
+        </button>
+    </form>
+</div>

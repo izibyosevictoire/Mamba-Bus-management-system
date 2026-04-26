@@ -1,0 +1,54 @@
+﻿@page
+@{
+    Layout = null;  // Use the default layout for the page
+}
+
+@model BusManagement.Pages.Admin.Schedules.EditScheduleModel
+
+@{
+    ViewData["Title"] = "Edit Schedule";
+}
+
+<!-- Render the Admin Navigation Bar -->
+@await Html.PartialAsync("AdminNavigation")
+
+<div class="container my-5">
+    <h2 class="fw-bold mb-4">Edit Schedule</h2>
+
+    <!-- Back Button -->
+    <a href="/Admin/Schedules/ManageSchedules" class="btn btn-secondary mb-3">
+        <i class="bi bi-arrow-left me-2"></i> Back to Schedules
+    </a>
+
+    <!-- Edit Schedule Form -->
+    <form method="post" class="shadow-sm rounded-3 p-4 bg-light">
+        <!-- Bus Selection -->
+        <div class="form-group mb-3">
+            <label for="BusId">Bus ID</label>
+            <input type="number" class="form-control" id="BusId" name="BusId" asp-for="BusId" required readonly />
+        </div>
+
+        <!-- Route Selection -->
+        <div class="form-group mb-3">
+            <label for="RouteId">Route ID</label>
+            <input type="number" class="form-control" id="RouteId" name="RouteId" asp-for="RouteId" required />
+        </div>
+
+        <!-- Departure Time -->
+        <div class="form-group mb-3">
+            <label for="DepartureTime">Departure Time</label>
+            <input type="datetime-local" class="form-control" id="DepartureTime" name="DepartureTime" asp-for="DepartureTime" required />
+        </div>
+
+        <!-- Arrival Time -->
+        <div class="form-group mb-4">
+            <label for="ArrivalTime">Arrival Time</label>
+            <input type="datetime-local" class="form-control" id="ArrivalTime" name="ArrivalTime" asp-for="ArrivalTime" required />
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">
+            <i class="bi bi-save me-1"></i> Update Schedule
+        </button>
+    </form>
+</div>

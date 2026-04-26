@@ -1,0 +1,274 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\bus-management-api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:bus-management-api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:controllers\\ticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\controllers\\busescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:controllers\\busescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\controllers\\driverassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:controllers\\driverassignmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\entities\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:entities\\schedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\entities\\route.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:entities\\route.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:entities\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:entities\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\authorization\\permissionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:authorization\\permissionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\hp\\downloads\\bus-management\\bus-management-api\\authorization\\haspermissionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:authorization\\haspermissionattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-13T16:14:28.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TicketsController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Controllers\\TicketsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TicketsController.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Controllers\\TicketsController.cs",
+              "RelativeToolTip": "Controllers\\TicketsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T11:27:29.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Entities\\User.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\User.cs",
+              "RelativeToolTip": "Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T11:26:06.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "bus-management-api.http",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\bus-management-api.http",
+              "RelativeDocumentMoniker": "bus-management-api.http",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\bus-management-api.http",
+              "RelativeToolTip": "bus-management-api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-04-13T16:14:36.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NotificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Controllers\\NotificationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationsController.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Controllers\\NotificationsController.cs",
+              "RelativeToolTip": "Controllers\\NotificationsController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwFIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T11:26:12.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DriverAssignmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Controllers\\DriverAssignmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DriverAssignmentsController.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Controllers\\DriverAssignmentsController.cs",
+              "RelativeToolTip": "Controllers\\DriverAssignmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T11:27:19.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-10T14:40:12.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BusesController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Controllers\\BusesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BusesController.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Controllers\\BusesController.cs",
+              "RelativeToolTip": "Controllers\\BusesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T11:27:23.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Schedule.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\Schedule.cs",
+              "RelativeDocumentMoniker": "Entities\\Schedule.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\Schedule.cs",
+              "RelativeToolTip": "Entities\\Schedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T11:26:04.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Route.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\Route.cs",
+              "RelativeDocumentMoniker": "Entities\\Route.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\Route.cs",
+              "RelativeToolTip": "Entities\\Route.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T11:26:01.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\Permission.cs",
+              "RelativeDocumentMoniker": "Entities\\Permission.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\Permission.cs",
+              "RelativeToolTip": "Entities\\Permission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T11:25:58.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\Notification.cs",
+              "RelativeDocumentMoniker": "Entities\\Notification.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Entities\\Notification.cs",
+              "RelativeToolTip": "Entities\\Notification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-11T11:25:55.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PermissionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Authorization\\PermissionHandler.cs",
+              "RelativeDocumentMoniker": "Authorization\\PermissionHandler.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Authorization\\PermissionHandler.cs",
+              "RelativeToolTip": "Authorization\\PermissionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:34:45.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HasPermissionAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Authorization\\HasPermissionAttribute.cs",
+              "RelativeDocumentMoniker": "Authorization\\HasPermissionAttribute.cs",
+              "ToolTip": "C:\\Users\\hp\\Downloads\\bus-management\\bus-management-api\\Authorization\\HasPermissionAttribute.cs",
+              "RelativeToolTip": "Authorization\\HasPermissionAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T14:34:41.642Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

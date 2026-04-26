@@ -1,0 +1,113 @@
+﻿@page
+@model BusManagement.Pages.Clients.PurchaseModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Purchase Ticket";
+}
+@await Html.PartialAsync("ClientNavigation")
+
+<div class="container my-5">
+    <div class="text-center mb-4">
+        <h2 class="fw-bold">Purchase Ticket</h2>
+        <p class="lead">First, select a route, then choose a bus, and finally select your schedule.</p>
+    </div>
+
+    <!-- Filtering Form (GET): First, select a Route -->
+    <form method="get" class="shadow-sm rounded-3 p-4 bg-light">
+        <div class="form-group mb-3">
+            <label for="selectedRoute" class="form-label">Select Route</label>
+            <select id="selectedRoute" name="selectedRoute" class="form-control" onchange="this.form.submit()" required>
+                <option value="" disabled selected>Select a route</option>
+                @foreach (var route in Model.Routes)
+                {
+                    if (route == Model.SelectedRoute)
+                    {
+                                <option value="@route" selected="selected">@route</option>
+                    }
+                    else
+                    {
+                                <option value="@route">@route</option>
+                    }
+                }
+            </select>
+        </div>
+
+        @* If a route is selected, show Bus selection *@
+        @if (!string.IsNullOrEmpty(Model.SelectedRoute))
+        {
+                <div class="form-group mb-3">
+                        <label for="selectedBusId" class="form-label">Select Bus (Optional)</label>
+                    <select id="selectedBusId" name="selectedBusId" class="form-control" onchange="this.form.submit()" required>
+                        <option value="" disabled selected>Select a bus</option>
+                    @{
+                        // Group buses from schedules that match the selected route.
+                        var busOptions = Model.Schedules
+                            .Select(s => new { s.BusId, s.BusNumber })
+                            .Distinct()
+                            .ToList();
+                    }
+                    @foreach (var bus in busOptions)
+                    {
+                        if (bus.BusId == Model.SelectedBusId)
+                        {
+                                        <option value="@bus.BusId" selected="selected">@bus.BusNumber</option>
+                        }
+                        else
+                        {
+                                        <option value="@bus.BusId">@bus.BusNumber</option>
+                        }
+                    }
+                    </select>
+                </div>
+        }
+    </form>
+
+    @* If schedules exist (filtered by route and bus), show Purchase Form *@
+    @if (Model.Schedules.Any())
+    {
+            <form method="post" class="shadow-sm rounded-3 p-4 bg-light">
+            @{
+                // For display, we assume that all schedules in Model.Schedules belong to the chosen route and bus.
+                // You might want to further refine if necessary.
+                var firstSchedule = Model.Schedules.First();
+            }
+                <div class="form-group mb-3">
+                    <label class="form-label">Route</label>
+                    <input type="text" class="form-control" readonly value="@Model.SelectedRoute" />
+                </div>
+                <div class="form-group mb-3">
+                    <label class="form-label">Price</label>
+                    <input type="text" class="form-control" readonly value="@firstSchedule.Price" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="ScheduleId" class="form-label">Select Time</label>
+                    <select id="ScheduleId" name="ScheduleId" class="form-control" required>
+                        <option value="" disabled selected>Select a time</option>
+                    @foreach (var schedule in Model.Schedules)
+                    {
+                                <option value="@schedule.ScheduleId">
+                            @($"{schedule.DepartureTime:yyyy-MM-dd HH:mm} - {schedule.ArrivalTime:HH:mm}")
+                                </option>
+                    }
+                    </select>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save me-1"></i> Purchase Ticket
+                    </button>
+                    <a href="/Clients/Index" class="btn btn-secondary">
+                        <i class="bi bi-house-door me-1"></i> Home
+                    </a>
+                </div>
+            </form>
+    }
+    else
+    {
+            <div class="alert alert-info">No schedules available for the selected route and bus. Please refine your selections.</div>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+            <div class="alert alert-success mt-3">@Model.Message</div>
+    }
+</div>

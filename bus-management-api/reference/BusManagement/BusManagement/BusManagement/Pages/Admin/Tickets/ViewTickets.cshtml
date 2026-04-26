@@ -1,0 +1,76 @@
+﻿@page
+@model BusManagement.Pages.Admin.Tickets.ViewTicketsModel
+@{
+    ViewData["Title"] = "View Tickets";
+}
+<!-- Admin Navigation -->
+@await Html.PartialAsync("AdminNavigation")
+
+<div class="container mt-4">
+    <h2 class="mb-3">View Tickets</h2>
+
+    <!-- Filter Form -->
+    <form method="get" class="mb-4 row g-3">
+        <div class="col-md-4">
+            <label for="ClientId" class="form-label">Client</label>
+            <select asp-for="ClientId" class="form-select" asp-items="Model.Clients">
+                <option value="">-- Select Client --</option>
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label for="ScheduleId" class="form-label">Schedule</label>
+            <select asp-for="ScheduleId" class="form-select" asp-items="Model.Schedules">
+                <option value="">-- Select Schedule --</option>
+            </select>
+        </div>
+
+        <div class="col-md-4 align-self-end">
+            <button type="submit" class="btn btn-primary">Filter</button>
+            <a href="/Admin/Tickets/ViewTickets" class="btn btn-secondary">Clear Filters</a>
+            <a href="@Url.Page("/Admin/Tickets/ViewTickets", new { handler = "ExportToCSV" })" class="btn btn-success">Export CSV</a>
+        </div>
+    </form>
+
+    <!-- Tickets Table -->
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Ticket ID</th>
+                    <th>Client</th>
+                    <th>Bus</th>
+                    <th>Route</th>
+                    <th>Price</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Issued Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Tickets.Any())
+                {
+                    @foreach (var ticket in Model.Tickets)
+                    {
+                                <tr>
+                                    <td>@ticket.TicketId</td>
+                                    <td>@ticket.ClientName</td>
+                                    <td>@ticket.BusNumber</td>
+                                    <td>@ticket.Origin - @ticket.Destination</td>
+                                    <td>@ticket.Price.ToString("F2")</td>
+                                    <td>@ticket.DepartureTime.ToString("HH:mm")</td>
+                                    <td>@ticket.ArrivalTime.ToString("HH:mm")</td>
+                                            <td>@ticket.DateIssued.ToString("yyyy-MM-dd HH:mm")</td>
+                                </tr>
+                    }
+                }
+                else
+                {
+                        <tr>
+                            <td colspan="8" class="text-center">No tickets found.</td>
+                        </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

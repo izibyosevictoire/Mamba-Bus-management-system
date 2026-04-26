@@ -1,0 +1,83 @@
+﻿@page
+@{
+    Layout = null;
+}
+@model BusManagement.Pages.Admin.AssignDrivers.ManageAssignDriversModel
+
+@{
+    ViewData["Title"] = "Manage Driver Assignments";
+}
+
+<!-- Render the Admin Navigation Bar -->
+@await Html.PartialAsync("AdminNavigation")
+
+<div class="container my-5">
+    <h2 class="fw-bold mb-4">Manage Driver Assignments</h2>
+
+   
+
+    <!-- Active Assignments Section -->
+    <h3 class="fw-semibold mt-4">Active Assignments</h3>
+    <table class="table table-striped table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>Driver</th>
+                <th>Bus</th>
+                <th>Assignment Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var assignment in Model.Assignments)
+            {
+                    <tr>
+                        <td>@assignment.DriverName</td>
+                        <td>@assignment.BusNumber</td>
+                        <td>@assignment.AssignmentDate.ToString("yyyy-MM-dd")</td>
+                        <td>
+                            <span class="badge @(assignment.Status == "Active" ? "bg-success" : "bg-secondary")">
+                            @assignment.Status
+                            </span>
+                        </td>
+                        <td>
+                            <form method="post" asp-page-handler="RemoveAssignment" style="display:inline;">
+                                <input type="hidden" name="assignmentId" value="@assignment.AssignmentId" />
+                                <button type="submit" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash me-1"></i> Remove
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Assign a New Driver Section -->
+    <h3 class="fw-semibold mt-4">Assign a New Driver</h3>
+    <form method="post" asp-page-handler="AssignDriver" class="shadow-sm rounded-3 p-4 bg-light">
+        <div class="form-group mb-3">
+            <label for="driverId">Driver</label>
+            <select id="driverId" name="driverId" class="form-control" required>
+                @foreach (var driver in Model.Drivers)
+                {
+                        <option value="@driver.DriverId">@driver.Name</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="busId">Bus</label>
+            <select id="busId" name="busId" class="form-control" required>
+                @foreach (var bus in Model.Buses)
+                {
+                        <option value="@bus.BusId">@bus.BusNumber</option>
+                }
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-1"></i> Assign Driver
+        </button>
+    </form>
+</div>
