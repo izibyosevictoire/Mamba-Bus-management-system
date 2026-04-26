@@ -1,5 +1,5 @@
 namespace BusManagementApi.Entities;
-
+//notification entity
 public class Notification
 {
     public int NotificationId { get; set; }
