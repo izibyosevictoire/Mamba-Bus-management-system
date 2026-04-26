@@ -14,7 +14,7 @@ export default function Buses() {
     const [agencies, setAgencies] = useState([]);
 
     const { register, handleSubmit, reset, setValue, formState: { errors } } = useForm();
-
+//buses
     useEffect(() => {
         fetchBuses();
         fetchAgencies();
