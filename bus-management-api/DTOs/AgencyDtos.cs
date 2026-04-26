@@ -1,5 +1,5 @@
 namespace BusManagementApi.DTOs;
-
+// DTO for agency
 public class AgencyDto
 {
     public int AgencyId { get; set; }
