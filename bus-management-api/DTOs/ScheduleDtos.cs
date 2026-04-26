@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace BusManagementApi.DTOs;
-
+// DTO for schedule
 public class ScheduleDto
 {
     public int ScheduleId { get; set; }
