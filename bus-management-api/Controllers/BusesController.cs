@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace BusManagementApi.Controllers;
-
+//buses
 [ApiController]
 [Route("api/[controller]")]
 [Authorize]
