@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vizib\\Documents\\bus-management (2)\\bus-management\\bus-management-api\\bus-management-api.csproj": {}
+    "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\bus-management-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vizib\\Documents\\bus-management (2)\\bus-management\\bus-management-api\\bus-management-api.csproj": {
+    "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\bus-management-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vizib\\Documents\\bus-management (2)\\bus-management\\bus-management-api\\bus-management-api.csproj",
+        "projectUniqueName": "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\bus-management-api.csproj",
         "projectName": "bus-management-api",
-        "projectPath": "C:\\Users\\vizib\\Documents\\bus-management (2)\\bus-management\\bus-management-api\\bus-management-api.csproj",
+        "projectPath": "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\bus-management-api.csproj",
         "packagesPath": "C:\\Users\\vizib\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vizib\\Documents\\bus-management (2)\\bus-management\\bus-management-api\\obj\\",
+        "outputPath": "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -30,7 +30,6 @@
         },
         "frameworks": {
           "net8.0": {
-            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -49,7 +48,6 @@
       },
       "frameworks": {
         "net8.0": {
-          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "BCrypt.Net-Next": {
@@ -73,6 +71,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.22.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
