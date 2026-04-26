@@ -1,5 +1,5 @@
 namespace BusManagementApi.Entities;
-
+//driver assignment entity
 public class DriverAssignment
 {
     public int AssignmentId { get; set; }
