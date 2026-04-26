@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace BusManagementApi.DTOs;
-
+// DTO for route
 public class RouteDto
 {
     public int RouteId { get; set; }
