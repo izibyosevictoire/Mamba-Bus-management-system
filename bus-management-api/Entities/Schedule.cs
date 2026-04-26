@@ -1,5 +1,5 @@
 namespace BusManagementApi.Entities;
-
+//schedule entity
 public class Schedule
 {
     public int ScheduleId { get; set; }
