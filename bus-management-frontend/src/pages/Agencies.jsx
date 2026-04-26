@@ -5,7 +5,7 @@ import { agencyService } from '../api/services';
 import Modal from '../components/Modal';
 import { useAuth } from '../context/AuthContext';
 import toast from 'react-hot-toast';
-
+// agencies
 export default function Agencies() {
     const { user } = useAuth();
     const isRole = (roleType) => {
