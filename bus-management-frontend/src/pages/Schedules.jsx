@@ -34,6 +34,8 @@ export default function Schedules() {
 
     useEffect(() => { fetchData(); }, []);
 
+    // schedules feature implemented
+
     const fetchData = async () => {
         try {
             const [schedRes, busRes, routeRes] = await Promise.all([
