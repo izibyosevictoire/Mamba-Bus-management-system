@@ -9,7 +9,7 @@ import {
 
 // Utility function for conditional class names
 import { cn } from '../lib/utils';
-
+// Tailwind CSS is used for styling with utility classes
 // Custom authentication context (handles user + logout)
 import { useAuth } from '../context/AuthContext';
 
