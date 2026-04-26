@@ -594,3 +594,4 @@ C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\refi
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.pdb
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.genruntimeconfig.cache
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\ref\bus-management-api.dll
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

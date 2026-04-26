@@ -7,11 +7,21 @@ import Modal from '../components/Modal';
 import toast from 'react-hot-toast';
 import { parseLocalDate } from '../lib/utils';
 
-// Returns the minimum datetime string for datetime-local input (now)
+/** API / Date value → `YYYY-MM-DDTHH:mm` in the browser's local timezone for datetime-local inputs. */
+const toDatetimeLocalString = (dateInput) => {
+    const d = new Date(dateInput);
+    const pad = (n) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
+};
+
+/** `datetime-local` value → ISO UTC for the API (Npgsql rejects Unspecified DateTime for timestamptz). */
+const toApiIsoString = (datetimeLocalValue) => new Date(datetimeLocalValue).toISOString();
+
+// Minimum datetime-local string for inputs (local wall clock, seconds cleared)
 const nowLocal = () => {
     const now = new Date();
     now.setSeconds(0, 0);
-    return now.toISOString().slice(0, 16);
+    return toDatetimeLocalString(now);
 };
 
 export default function Schedules() {
@@ -84,9 +94,8 @@ export default function Schedules() {
             const payload = {
                 busId: parseInt(data.busId),
                 routeId: parseInt(data.routeId),
-                // Send as-is (no UTC conversion) so backend stores local time
-                departureTime: data.departureTime,
-                arrivalTime: data.arrivalTime,
+                departureTime: toApiIsoString(data.departureTime),
+                arrivalTime: toApiIsoString(data.arrivalTime),
             };
             if (editingSchedule) {
                 await scheduleService.update(editingSchedule.scheduleId, payload);
@@ -114,8 +123,8 @@ export default function Schedules() {
         setEditingSchedule(schedule);
         setValue('busId', schedule.busId);
         setValue('routeId', schedule.routeId);
-        setValue('departureTime', new Date(schedule.departureTime).toISOString().slice(0, 16));
-        setValue('arrivalTime', new Date(schedule.arrivalTime).toISOString().slice(0, 16));
+        setValue('departureTime', toDatetimeLocalString(schedule.departureTime));
+        setValue('arrivalTime', toDatetimeLocalString(schedule.arrivalTime));
         setIsModalOpen(true);
     };
 
