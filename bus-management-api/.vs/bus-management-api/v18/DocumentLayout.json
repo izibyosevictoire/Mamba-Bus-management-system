@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\vizib\\documents\\bus-management\\bus-management-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\vizib\\documents\\bus-management\\bus-management-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\vizib\\documents\\bus-management\\bus-management-api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28441747-6F02-4E29-922D-169B56D83F5F}|bus-management-api.csproj|c:\\users\\vizib\\documents\\bus-management\\bus-management-api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,26 +102,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-04-26T05:54:19.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\vizib\\Documents\\bus-management\\bus-management-api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAswJsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-25T11:19:47.838Z",
               "EditorCaption": ""
@@ -148,8 +148,7 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-24T11:33:27.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T11:33:27.955Z"
             },
             {
               "$type": "Document",

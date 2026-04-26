@@ -443,18 +443,6 @@ C:\Users\vizib\Documents\bus-management (2)\bus-management\bus-management-api\ob
 C:\Users\vizib\Documents\bus-management (2)\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.pdb
 C:\Users\vizib\Documents\bus-management (2)\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.genruntimeconfig.cache
 C:\Users\vizib\Documents\bus-management (2)\bus-management\bus-management-api\obj\Debug\net8.0\ref\bus-management-api.dll
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.csproj.AssemblyReference.cache
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.AssemblyInfoInputs.cache
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.AssemblyInfo.cs
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.csproj.CoreCompileInputs.cache
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.sourcelink.json
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.dll
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\refint\bus-management-api.dll
-C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.pdb
 C:\Users\vizib\Documents\bus-management\bus-management-api\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\vizib\Documents\bus-management\bus-management-api\bin\Debug\net8.0\appsettings.json
 C:\Users\vizib\Documents\bus-management\bus-management-api\bin\Debug\net8.0\bus-management-api.staticwebassets.endpoints.json
@@ -582,6 +570,15 @@ C:\Users\vizib\Documents\bus-management\bus-management-api\bin\Debug\net8.0\runt
 C:\Users\vizib\Documents\bus-management\bus-management-api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\vizib\Documents\bus-management\bus-management-api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\vizib\Documents\bus-management\bus-management-api\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.csproj.AssemblyReference.cache
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.AssemblyInfoInputs.cache
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.AssemblyInfo.cs
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.csproj.CoreCompileInputs.cache
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.sourcelink.json
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -592,5 +589,8 @@ C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\stat
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\swae.build.ex.cache
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-mana.C8634F10.Up2Date
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.dll
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\refint\bus-management-api.dll
+C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.pdb
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\bus-management-api.genruntimeconfig.cache
 C:\Users\vizib\Documents\bus-management\bus-management-api\obj\Debug\net8.0\ref\bus-management-api.dll
